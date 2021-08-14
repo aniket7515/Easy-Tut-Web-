@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="header">
+        <div class="container">
+            <img src="Images/logo.png" class="logo">
+            <div class="header-text">
+                <h1>The purpose is to <br> teach , bring learning to the people</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quam iure ex voluptates esse animi officia, hic dolore similique repellendus nam excepturi sit dicta in, ipsa nobis pariatur omnis quae.</p>
+                <button class="common-btn">
+                    Read More
+                </button>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img src="Images/menu.png" id="menueBtn">
+
+
+    <script>
+        var menuebtn = document.getElementById("menueBtn");
+        var sidenav = document.getElementById("sideNav");
+
+        sidenav.style.right ="-150px";
+
+        menuebtn.onclick=function(){
+            if(sidenav.style.right=="-150px"){
+                sidenav.style.right=="0px";
+            }
+            else{
+                sidenav.style.right=="-150px";
+            }
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
